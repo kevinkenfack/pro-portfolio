@@ -5,12 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && cpx \"robots.txt sitemap.xml\" dist",
     "preview": "vite preview",
     "host": "vite --host"
   },
   "devDependencies": {
-    "vite": "^4.0.0"
+    "vite": "^4.0.0",
+    "cpx": "^1.3.1"
   },
   "dependencies": {
     "dat.gui": "^0.7.9",
