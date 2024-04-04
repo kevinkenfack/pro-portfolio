@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && cpx src/robots.txt src/sitemap.xml dist/",
+    "build": "vite build && cpx \"src/*\" \"dist/\"",
+
     "preview": "vite preview",
     "host": "vite --host"
   },
