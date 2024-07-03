@@ -10,6 +10,19 @@ import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader';
 import { FontLoader } from 'three/addons/loaders/FontLoader.js';
 import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
 
+document.addEventListener('DOMContentLoaded', function() {
+  // Create a new script element
+  var script = document.createElement('script');
+
+  // Set the attributes for the script element
+  script.defer = true;
+  script.src = "https://analytics.tagueacademy.com/pixel/dSEBsLMkrxc7hkYl";
+
+  // Append the script element to the document head
+  document.head.appendChild(script);
+});
+
+
 // VARIABLES
 let theme = 'light';
 let bookCover = null;
